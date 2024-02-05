@@ -14,6 +14,7 @@ export function TaskCard({ task }) {
         >
             <h1 className='text-2xl font-bold'>{task.title}</h1>
             <p className='text-lg'>{task.description}</p>
+            <p className='text-lg'>Done: {task.done ? '✅' : '❌'}</p>
         </div>
     )
 }
